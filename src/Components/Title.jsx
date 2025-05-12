@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './ComponentsStyle/Title.scss'
 
 export default function Title({text1, text2, showLink}) {
@@ -11,7 +12,7 @@ export default function Title({text1, text2, showLink}) {
             </h2>
             {
                 showLink && (
-                    <a className="title-link" href="#">Shop All &gt;</a>
+                    <Link className="title-link" to="/products">Shop All &gt;</Link>
                 )
             }
         </div>
